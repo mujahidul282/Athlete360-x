@@ -1,6 +1,7 @@
 import { GoogleGenAI } from "@google/genai";
 import { WorkoutPlanRequest, NutritionRequest } from "../types";
 
+// Initialize the API client with your specific key
 const ai = new GoogleGenAI({ apiKey: 'AIzaSyDMtpNxoqll5enb83VXwNkaw44ECa3pRs4' });
 const modelId = 'gemini-2.5-flash';
 
@@ -29,7 +30,7 @@ export const generateWorkoutPlan = async (request: WorkoutPlanRequest): Promise<
     return response.text || "Failed to generate workout plan. Please try again.";
   } catch (error) {
     console.error("Gemini API Error:", error);
-    return "Error connecting to the AI Coach. Please check your API key and connection.";
+    return "Error connecting to the AI Coach. Please ensure your API key is valid and you have an internet connection.";
   }
 };
 
