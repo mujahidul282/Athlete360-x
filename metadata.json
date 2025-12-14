@@ -1,0 +1,8 @@
+{
+  "name": "Athlete360",
+  "description": "A 360-degree athlete management platform featuring AI-powered training plans, nutrition advice, performance analytics, and a virtual smart coach using Google Gemini.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ]
+}
