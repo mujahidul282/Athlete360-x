@@ -1,7 +1,7 @@
 import { GoogleGenAI } from "@google/genai";
 import { WorkoutPlanRequest, NutritionRequest } from "../types";
 
-const ai = new GoogleGenAI({ apiKey: process.env.API_KEY });
+const ai = new GoogleGenAI({ apiKey: 'AIzaSyDMtpNxoqll5enb83VXwNkaw44ECa3pRs4' });
 const modelId = 'gemini-2.5-flash';
 
 export const generateWorkoutPlan = async (request: WorkoutPlanRequest): Promise<string> => {
